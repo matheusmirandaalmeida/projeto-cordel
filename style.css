@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Roboto Slab', serif;
+    --fonte3: 'Damion', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header, a, footer a {  /*LINKS*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-left: 30px;
+    line-height: 2em;  /* Espaço entre as letras*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte3);
+    font-size: 4vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    box-shadow: inset 5px 5px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('/imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('/imagens/background002.jpg');
+    background-position: right center;
+}
+
+section.imagem > p {
+    display: inline-block;  /*Espaço do bloco preto inline-block irá deixar encostado com as linhas*/
+    padding: 5px;
+    background-color: rgba(5, 5, 5, 0.452);
+    text-shadow: 2px 1px 0px black;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
